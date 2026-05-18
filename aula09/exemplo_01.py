@@ -13,12 +13,34 @@ def quadrado(n):
     return q
 
 
+def metade(n):
+    m = n / 2
+    return m
+
+
 num = int(input('Informe o número: '))
 
-restuado_dobro = dobro(num)
-restuado_triplo = triplo(num)
-restuado_quadrado = quadrado(num)
+print("\n ##### MENU DE OPÇÕES #####")
+print(30 * "=")
+print("[1] - Dobro\n[2] - triplo\n[3] - Quadrado\n[4] - Metade")
 
-print(f'Dobro: {restuado_dobro}')
-print(f'Triplo: {restuado_triplo}')
-print(f'Quadrado: {restuado_quadrado}')
+opcao = int(input("\nInforme a sua opção: "))
+
+match opcao:
+    
+    case 1:
+        resultado = dobro(num)
+
+    case 2:
+        resultado = triplo(num)
+
+    case 3:
+        resultado = quadrado(num)
+
+    case 4:
+        resultado = metade(num)
+    
+    case _:
+        print("Opção inválida.")
+
+print(f"\nO resultado da sua operação é: {resultado} ")
