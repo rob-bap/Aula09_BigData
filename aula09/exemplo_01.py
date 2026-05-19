@@ -1,25 +1,32 @@
-def dobro(n):
-    d = n * 2
-    return d
+import random
+import os
+
+from auxiliar.operacoes import dobro, triplo, quadrado, metade
+# def dobro(n):
+#     d = n * 2
+#     return d
 
 
-def triplo(n):
-    t = n * 3
-    return t
+# def triplo(n):
+#     t = n * 3
+#     return t
 
 
-def quadrado(n):
-    q = n ** 2
-    return q
+# def quadrado(n):
+#     q = n ** 2
+#     return q
 
 
-def metade(n):
-    m = n / 2
-    return m
+# def metade(n):
+#     m = n / 2
+#     return m
 
+os.system("cls")
 
-num = int(input('Informe o número: '))
+# num = int(input('Informe o número: '))
+num = random.randint(1, 100)
 
+print(f"\nO número selecionados foi {num} ")
 print("\n ##### MENU DE OPÇÕES #####")
 print(30 * "=")
 print("[1] - Dobro\n[2] - triplo\n[3] - Quadrado\n[4] - Metade")
